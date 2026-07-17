@@ -1,0 +1,103 @@
+# Research Paper: Improving Reliability of Real-Time RTP Audio Streaming Under Packet Loss
+
+## Overview
+
+This repository contains the IEEE-style research paper and LaTeX source for:
+
+**"Improving Reliability of Real-Time RTP Audio Streaming Under Packet Loss Using FEC, Adaptive Jitter Buffering, and Waveform-Substitution Packet Loss Concealment (PLC)"**
+
+The paper presents the design, implementation, and evaluation of techniques that improve the reliability of RTP-based real-time audio streaming over unreliable networks.
+
+---
+
+## Abstract
+
+Real-time audio streaming over UDP is widely used because it provides low latency but does not guarantee reliable packet delivery. Packet loss can introduce audible glitches and interruptions during playback.
+
+This research enhances an existing C++ RTP audio streaming system by integrating:
+
+- XOR-based Forward Error Correction (FEC)
+- Adaptive Jitter Buffering
+- Waveform-Substitution Packet Loss Concealment (PLC)
+
+The improved system was evaluated under multiple packet-loss conditions (0%, 1%, 5%, 10%, 20%, and 50%), demonstrating improved playback continuity and reduced audible degradation, especially at low and moderate packet-loss rates.
+
+---
+
+## Key Contributions
+
+- RTP-based real-time audio streaming
+- FLAC compression for audio transmission
+- XOR-based Forward Error Correction (FEC)
+- Adaptive Jitter Buffer implementation
+- Packet Loss Concealment (PLC)
+- Performance evaluation under simulated packet loss
+- IEEE-format research paper written in LaTeX
+
+---
+
+## Technologies Used
+
+- C++
+- RTP / RTCP
+- UDP
+- FLAC Codec
+- ALSA
+- jrtplib
+- Linux (Ubuntu)
+- LaTeX (IEEE Format)
+
+---
+
+## Repository Structure
+
+```
+Research_Paper/
+│
+├── main.tex        # IEEE LaTeX source
+├── main.pdf        # Compiled research paper
+└── README.md
+```
+
+---
+
+## Research Highlights
+
+- Investigates the impact of packet loss on RTP audio streaming.
+- Implements lightweight recovery mechanisms suitable for real-time applications.
+- Compares the baseline RTP system with the enhanced system.
+- Presents experimental results using approximately 11,437 RTP packets.
+
+---
+
+## Results
+
+The proposed techniques significantly improve audio quality under low and moderate packet-loss conditions while maintaining real-time performance.
+
+---
+
+## Future Work
+
+Potential future enhancements include:
+
+- Reed-Solomon Forward Error Correction
+- Adaptive bitrate streaming
+- Opus codec integration
+- AI-based Packet Loss Concealment
+- Real-world WAN performance evaluation
+
+---
+
+## Author
+
+**Devika Sana**
+
+B.Tech – Computer Science and Engineering
+
+Rajiv Gandhi University of Knowledge Technologies (RGUKT)
+
+---
+
+## License
+
+This repository is intended for academic and research purposes.
